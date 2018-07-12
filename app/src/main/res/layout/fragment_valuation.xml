@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:text="Thẩm định chỉ trong trường hợp vay đăng ký xe"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/ll_wrap"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_name_valuation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/edittext_login_background"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/_10sdp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/edittext_login_background"
+        android:gravity="center">
+
+        <AutoCompleteTextView
+            android:id="@+id/act_model_motobike"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/_1sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:layout_toStartOf="@+id/bt_revaluation"
+            android:background="@color/white"
+            android:hint="Nhập tên xe"
+            android:paddingLeft="@dimen/_5sdp"
+            android:textColor="@color/gray4"
+            android:textSize="@dimen/_12sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/bt_revaluation" />
+
+        <ImageButton
+            android:id="@+id/bt_revaluation"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:background="@mipmap/ic_unlock_search"
+            android:visibility="gone"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#ccc" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@color/gray"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/grayLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7.2"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text=" - Tiền vay tối đa: "
+                            android:textColor="#000" />
+
+                        <TextView
+                            android:id="@+id/tv_money_discount_by_year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:textColor="@color/greed2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text=" - Tiền được vay: "
+                            android:textColor="#000" />
+
+
+                        <TextView
+                            android:id="@+id/tv_total_money_discount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:textColor="@color/red_2" />
+                    </LinearLayout>
+
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="@dimen/_2sdp"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="@dimen/_5sdp"-->
+                    <!--android:text=" - Tiền có thể cho vay: "-->
+                    <!--android:textColor="#000" />-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/textView8"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="@dimen/_5sdp"-->
+                    <!--android:text="100.100.000"-->
+                    <!--android:textColor="@color/greed2" />-->
+                    <!--</LinearLayout>-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.8">
+
+                    <Button
+                        android:id="@+id/btn_post_appraisal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:background="@color/colorActionbar"
+                        android:paddingLeft="@dimen/_3sdp"
+                        android:paddingRight="@dimen/_3sdp"
+                        android:text="Lưu"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11sdp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_post_appraisal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_bottom"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:minHeight="@dimen/_300sdp"
+            android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

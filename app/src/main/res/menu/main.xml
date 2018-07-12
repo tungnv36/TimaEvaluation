@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_menu"
+        android:title="Chức năng"
+        app:showAsAction="always"
+        android:iconTint="#FFFFFF"
+        android:orderInCategory="0">
+        <menu>
+            <item
+                android:id="@+id/menu_comment_house"
+                android:icon="@drawable/ic_insert_comment_black_24dp"
+                android:title="@string/menu_comment_house"
+                app:showAsAction="never"
+                android:iconTint="@color/colorPrimary" />
+
+            <item
+                android:id="@+id/menu_comment_company"
+                android:icon="@drawable/ic_insert_comment_black_24dp"
+                android:title="@string/menu_comment_company"
+                app:showAsAction="never"
+                android:iconTint="@color/colorPrimary" />
+
+            <item
+                android:id="@+id/menu_checklist"
+                android:title="@string/menu_checklist"
+                android:icon="@drawable/ic_playlist_add_check_black_24dp"
+                app:showAsAction="never"
+                android:iconTint="@color/colorPrimary" />
+
+            <item
+                android:id="@+id/menu_upload"
+                android:title="@string/menu_upload"
+                android:icon="@drawable/ic_file_upload_black_24dp"
+                app:showAsAction="never"
+                android:iconTint="@color/colorPrimary" />
+
+            <item
+                android:id="@+id/menu_return"
+                android:title="@string/menu_return"
+                android:icon="@drawable/ic_keyboard_return_black_24dp"
+                app:showAsAction="never"
+                android:iconTint="@color/colorPrimary" />
+
+            <item
+                android:id="@+id/menu_chuyentd"
+                android:title="@string/menu_chuyentd"
+                android:icon="@drawable/ic_transfer_within_a_station_black_24dp"
+                app:showAsAction="never"
+                android:iconTint="@color/colorPrimary" />
+
+            <item
+                android:id="@+id/menu_baoloi"
+                android:title="@string/menu_baoloi"
+                android:icon="@drawable/ic_insert_comment_black_24dp"
+                app:showAsAction="never"
+                android:iconTint="@color/colorPrimary" />
+
+            <item
+                android:id="@+id/menu_ton"
+                android:title="@string/menu_ton"
+                android:icon="@drawable/ic_warning_black_24dp2"
+                app:showAsAction="never"
+                android:iconTint="@color/colorPrimary" />
+
+        </menu>
+    </item>
+
+
+
+</menu>

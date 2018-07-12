@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/disabled_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/re_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/disabled_color">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_view_image"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center_horizontal|center_vertical"-->
+            <!--android:scaleType="fitCenter" />-->
+
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentRight="true"
+            android:background="@color/disabled_color"
+            android:textColor="#ffffff"
+            android:paddingLeft="10dp"
+            android:layout_margin="@dimen/_5sdp"
+            android:paddingRight="10dp"
+            android:text="Đóng" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btn_cancel" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_loadimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>

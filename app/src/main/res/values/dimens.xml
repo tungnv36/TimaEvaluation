@@ -1,0 +1,13 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_splash_margin">20dp</dimen>
+
+    <dimen name="activity_login_text_size">15sp</dimen>
+    <dimen name="activity_login_padding_edittext">5sp</dimen>
+    <dimen name="activity_login_edittext_width">300dp</dimen>
+    <dimen name="activity_login_edittext_height">40dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_contract_item_text_size">35sp</dimen>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+
+    <color name="colorPrimary">#f6f6f6</color>
+    <color name="colorPrimaryDark">#6243A2</color>
+
+    <color name="colorActionbar">#ef4223</color>
+
+    <color name="colorAccent">#ef4223</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="grayLine">#d7d7d7</color>
+    <color name="gray">#e9e9e9</color>
+    <color name="gray4">#6e6966</color>
+    <color name="gray2">#f7f7f7</color>
+    <color name="pink">#E8376E</color>
+    <color name="blue">#336DC6</color>
+    <color name="orange">#FDAA3C</color>
+    <color name="purple">#6243A2</color>
+    <color name="green">#2EC1B1</color>
+    <color name="disabled_color">#0F1010</color>
+    <color name="text_infor">#B37B0D</color>
+    <color name="date_select_in_calendar">#fc8080</color>
+    <color name="gray_41">#696969</color>
+    <color name="red">#FF0000</color>
+    <color name="red_2">#c31919</color>
+    <color name="greed">#00CC00</color>
+    <color name="greed2">#00a65a</color>
+    <color name="greed3">#9ac980</color>
+    <color name="greed4">#0F7F12</color>
+    <color name="yellow">#f39c12</color>
+    <color name="mecash_color">#fa8a3a</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="gray3">#e7e7e7</color>
+    <color name="textcolor_toolbar">#383838</color>
+    <color name="bg_sliding_menu">#474441</color>
+    <color name="black">#000</color>
+    <color name="bottom_intro_background">#f4f1f1</color>
+    <color name="search_box">#f6f4f4</color>
+    <color name="my_loan_bg">#e9e4e4</color>
+    <color name="white_trans">#99FFFFFF</color>
+</resources>

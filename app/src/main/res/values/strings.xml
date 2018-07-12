@@ -1,0 +1,207 @@
+<resources>
+    <string name="app_name">Thẩm định</string>
+
+    <!--  -->
+    <string name="select_type">CHỌN LOẠI HÌNH VAY</string>
+    <string name="label_vaydangkyxe">Vay đăng ký xe</string>
+    <string name="label_vaytinchap">Vay tín chấp</string>
+    <string name="label_vayhokhau">Vay hộ khẩu</string>
+    <string name="label_loantime">THỜI HẠN VAY</string>
+    <string name="label_loanmoney">SỐ TIỀN VAY</string>
+    <string name="fill_info_noti">Bạn cần nhập đầy đủ thông tin để hoàn tất khoản vay</string>
+    <string name="fill_info_address_noti">Bạn cần nhập đầy đủ địa chỉ thông tin để hoàn tất khoản vay</string>
+    <string name="label_search_bike">Xe đăng ký vay :</string>
+    <string name="title_contact">Liên Hệ</string>
+    <string name="title_loan">Khoản vay của tôi</string>
+    <string name="title_personal">Cá nhân</string>
+    <string name="title_branch">Điểm tư vấn</string>
+    <string name="title_noti">Thông báo</string>
+    <string name="title_question">Câu hỏi</string>
+    <string name="ssl_error_message">Lỗi chứng chỉ SSL</string>
+    <string name="ssl_error_title">Lỗi chứng chỉ SSL</string>
+    <string name="cmnd_hint">Nhập CMND 9 hoặc 12 số</string>
+    <string name="loading_label">Đang tải ...</string>
+    <string name="connection_error">Không kết nối được máy chủ</string>
+
+    <string name="process_loading">Loading...</string>
+    <string name="contract_search">Nhập số hợp đồng, tên khách hàng</string>
+    <string name="website_name">http://ag.mecash.vn</string>
+    <!-- fragment tab aggregate-->
+
+    <!--loai xe-->
+    <string name="label_manufacturer">Nhà sản xuất:</string>
+    <string name="label_modelphone">Loại :</string>
+    <string name="label_year_made">Năm sản xuất:</string>
+
+    <!--thong tin-->
+    <string name="label_customername">Họ và tên:</string>
+    <string name="label_customerphone">Số ĐT:</string>
+    <string name="label_customerid">Số CMT:</string>
+    <string name="label_customerbirthday">Ngày sinh:</string>
+    <string name="label_customergender">Giới tính:</string>
+    <string name="label_customercompanyname">Tên công ty:</string>
+    <string name="label_customercompanyaddress">Địa chỉ công ty:</string>
+    <string name="label_customercompanyphone">Số ĐT liên hệ:</string>
+    <string name="label_customercreatedate">Ngày đăng ký:</string>
+    <string name="label_customerfullnamefamily">Họ tên(người thân):</string>
+    <string name="label_customerjob">Vị trí:</string>
+    <string name="label_customersalary">Lương:</string>
+    <string name="label_customer_loancredit">Thông tin khoản vay</string>
+    <string name="label_certificate_loancredit">Giấy tờ bạn có</string>
+    <string name="label_customer_disbursement">Giải ngân</string>
+    <string name="label_customeraddresshousehold">Hộ khẩu:</string>
+    <string name="label_customertypeofownership">Hình thức cư trú:</string>
+    <string name="label_customerreceiveincome">Nhận lương qua:</string>
+    <string name="label_customerloantime">Số ngày vay:</string>
+    <string name="label_customeraccountnumberbank">Số tài khoản:</string>
+    <string name="label_customermoneyconsultant">Tiền tư vấn:</string>
+    <string name="label_customermoneyloan">Tiền lãi:</string>
+    <string name="label_customermoneyservice">Tiền dịch vụ:</string>
+    <string name="label_customernamebanking">Ngân hàng:</string>
+    <string name="label_customernamecardholder">Chủ thẻ:</string>
+    <string name="label_customernơte">Ghi chú:</string>
+    <string name="label_customerfromdate">Ngày vay:</string>
+    <string name="label_customerrepresent">Người đại diện:</string>
+    <string name="label_customertodate">Ngày trả:</string>
+    <string name="label_customerrelativefamily">Mối quan hệ:</string>
+    <string name="label_customerrelativefamilyname">Tên người thân:</string>
+    <string name="label_customerphonefamily">SĐT người thân:</string>
+    <string name="label_customertotalmoney">Tiền ĐL cho vay:</string>
+    <string name="label_customertotalmoneyfirst">Tiền khách cần vay:</string>
+    <string name="label_customertotalmoneyreturn">Tiền phải trả:</string>
+
+
+    <string name="label_customeraddress">Địa chỉ:</string>
+    <string name="label_customerinformation">Thông tin cá nhân</string>
+    <string name="label_customerasset">Thông tin tài sản</string>
+    <string name="loading_aggregate_detail_customer_message">Đang tải thông tin khách hàng, vui lòng đợi ...</string>
+    <string name="loading_message">Đang xử lý thông tin, vui lòng đợi ...</string>
+    <!--activity login-->
+    <string name="label_login_remember"> Nhớ đăng nhập</string>
+    <string name="username_hint">Tên đăng nhập</string>
+    <string name="password_hint">Mật khẩu</string>
+    <string name="Login_label">Đăng nhập</string>
+    <string name="forget_Login_label">Quên mật khẩu?</string>
+    <string name="success_login_message">Đăng nhập thành công</string>
+    <string name="unaccess_login_message">Tài khoản của bạn chưa được phân quyền truy cập hệ thống</string>
+    <string name="failure_login_message">Thông tin đăng nhập không đúng</string>
+    <string name="loading_login_message">Đang đăng nhập vui lòng đợi ...</string>
+    <string name="exit_app_message">Bạn có muốn thoát ứng dụng không ?</string>
+    <string name="delete_image">Bạn có muốn xóa ảnh không?</string>
+    <string name="username_empty_message">Tên đăng nhập không được để trống</string>
+    <string name="password_empty_message">Mật khẩu không được để trống</string>
+    <!-- fragment tab scheduce-->
+    <string name="label_scheduce">Giờ hẹn</string>
+    <string name="label_scheduce_note">Ghi chú</string>
+    <string name="label_scheduce_button_save">Lưu hẹn giờ</string>
+    <string name="label_scheduce_button_cancle">Hủy hẹn giờ</string>
+    <!-- fragment tab contract-->
+    <string name="loading_contract_message">Đang tải danh sách hợp đồng,vui lòng đợi ...</string>
+    <string name="logout_contract_message">Bạn có muốn đăng xuất không ?</string>
+    <string name="server_error_message">Không thể kết nối máy chủ</string>
+    <string name="server_timeout_message">Không thể kết nối máy chủ</string>
+    <string name="token_error_message">Thông tin token không hợp lệ, vui lòng đăng nhập lại.</string>
+    <string name="token_out_of_date_message">Token hết hạn, vui lòng đăng nhập lại.</string>
+
+    <!--Tablayout menu-->
+    <string name="tab_aggregate">Tổng Hợp</string>
+    <string name="tab_valuation">Thẩm định</string>
+    <string name="tab_kd_ca_the">Kinh doanh cá thể</string>
+    <string name="tab_schedule">Hẹn Giờ</string>
+    <string name="tab_history">Lịch Sử</string>
+    <string name="tab_vouchers">Chứng Từ</string>
+
+
+    <!--fragment_post_contract-->
+
+    <string name="tv_info">Thông tin nhận tiền:</string>
+    <string name="tv_receive_money_with">Nhận tiền bằng:</string>
+    <string name="tv_bank_name">Ngân hàng:</string>
+    <string name="tv_amount_of_money">Số tiền:</string>
+    <string name="tv_account_number">Số tài khoản:</string>
+    <string name="tv_account_name">Tên tài khoản:</string>
+    <string name="tv_facebook">Facebook:</string>
+    <string name="tv_post_image">Update Ảnh</string>
+    <string name="tv_note">Ghi chú:</string>
+    <string name="tv_image_portrait">Ảnh chân dung(Ít nhất 1 ảnh):</string>
+    <string name="tv_image_household">Hộ khẩu:</string>
+    <string name="tv_image_register_bike">Đăng ký xe:</string>
+
+
+    <!--menu-->
+    <string name="menu_accept_contract">Duyệt </string>
+    <string name="menu_dieu_phoi_tvv">Chuyển thẩm định</string>
+    <string name="menu_dieu_phoi_tham_dinh">Chuyển nhân viên thẩm định</string>
+    <string name="menu_dieu_phoi_ky_hd">Chuyển nhân viên Ký HĐ</string>
+    <string name="menu_comment">Comment</string>
+    <string name="menu_comment_house">Comment nhà</string>
+    <string name="menu_comment_company">Comment công ty</string>
+    <string name="menu_checklist">Checklist</string>
+    <string name="menu_upload">Upload</string>
+    <string name="menu_return">Trả lại</string>
+    <string name="menu_chuyentd">Chuyển thẩm định</string>
+    <string name="menu_baoloi">Báo lỗi</string>
+    <string name="menu_ton">Tồn</string>
+    <string name="menu_cancel_contract">Hủy</string>
+    <string name="menu_tra_lai_TDHS">Trả lại TĐHS</string>
+    <string name="menu_tdtd_tra_lai">Trả lại</string>
+    <string name="menu_QLKV_cancel_contract_to_TVV">Trả về TVV </string>
+    <string name="menu_KSNB_TD_THUC_DIA_UPLOAD">Upload ảnh</string>
+    <string name="menu_cancel_contract_to_KSNB">Hủy</string>
+
+    <!--title actionbar-->
+    <string name="actionbar_detail_contract">CHI TIẾT HỢP ĐỒNG</string>
+    <string name="actionbar_accept_contract">DUYỆT HỢP ĐỒNG</string>
+    <string name="detail_notify">Chi tiết thông báo</string>
+    <!--xac nhan khoan vay-->
+    <string name="dialog_comfirm_loan_title">Xác nhận khoản vay</string>
+    <string name="dialog_comfirm_loan_money_first">Tiền khách cần vay</string>
+    <string name="dialog_comfirm_loan_total_money">Tiền ĐL cho vay</string>
+    <string name="dialog_comfirm_loan_total_money_first">Tiền khách cần vay</string>
+    <string name="type_tienmat">Tiền mặt</string>
+    <string name="type_chuyen_qua_tai_khoan">Chuyển qua số tài khoản</string>
+    <string name="type_chuyen_qua_so_the">Chuyển qua số thẻ</string>
+    <string name="type_chuyen_viettel">Chuyển qua Viettel</string>
+
+    <string name="item_1">Hợp đồng</string>
+    <string name="item_2">Báo cáo</string>
+    <string name="item_3">Chờ TĐHS1</string>
+    <string name="item_4">Xử lý tồn</string>
+
+    <string-array name="seek_bar_money_items">
+        <item>1 </item>
+        <item>2 </item>
+        <item>3 </item>
+        <item>4 </item>
+        <item>5 </item>
+        <item>6 </item>
+        <item>7 </item>
+        <item>8 </item>
+        <item>9 </item>
+        <item>10 </item>
+        <item>11 </item>
+        <item>12 </item>
+        <item>13 </item>
+        <item>14 </item>
+        <item>15 </item>
+        <item>16 </item>
+        <item>17 </item>
+        <item>18 </item>
+        <item>19 </item>
+        <item>20 </item>
+        <item>21 </item>
+        <item>22 </item>
+        <item>23 </item>
+        <item>24 </item>
+        <item>25 </item>
+        <item>26 </item>
+        <item>27 </item>
+        <item>28 </item>
+        <item>29 </item>
+        <item>30 </item>
+
+    </string-array>
+
+    <string name="icon_heart">&#xf2bc;</string>
+
+</resources>

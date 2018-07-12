@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvNgay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dd/MM/yyyy HH:mm"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvNguoiThaoTac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ten shop"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="noi dung"
+        android:layout_below="@+id/tvNguoiThaoTac"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/greed4"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

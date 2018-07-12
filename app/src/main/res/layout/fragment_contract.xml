@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <info.hoang8f.android.segmented.SegmentedGroup
+        xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sgLoaiHopDong"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        segmentedgroup:sc_border_width="2dp"
+        segmentedgroup:sc_corner_radius="10dp"
+        segmentedgroup:sc_tint_color="@color/colorActionbar"
+        segmentedgroup:sc_checked_text_color="#FFFFFF">
+
+        <RadioButton
+            android:id="@+id/rbTatCa"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Tất cả"
+            android:checked="true"
+            android:textSize="20sp"
+            style="@style/RadioButton" />
+
+        <RadioButton
+            android:id="@+id/rbLuong"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Lương"
+            android:textSize="20sp"
+            style="@style/RadioButton" />
+
+        <RadioButton
+            android:id="@+id/rbHoKhau"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Hộ khẩu"
+            android:textSize="20sp"
+            style="@style/RadioButton" />
+
+        <RadioButton
+            android:id="@+id/rbXeMay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="Xe máy"
+            style="@style/RadioButton" />
+
+        <RadioButton
+            android:id="@+id/rbOto"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="Ô tô"
+            style="@style/RadioButton" />
+
+        <RadioButton
+            android:id="@+id/rbNhaDat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Nhà đất"
+            android:textSize="20sp"
+            style="@style/RadioButton" />
+    </info.hoang8f.android.segmented.SegmentedGroup>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvHopDong"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/sgLoaiHopDong">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

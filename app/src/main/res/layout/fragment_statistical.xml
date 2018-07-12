@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <info.hoang8f.android.segmented.SegmentedGroup
+        xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/segment"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        segmentedgroup:sc_border_width="2dp"
+        segmentedgroup:sc_corner_radius="10dp"
+        segmentedgroup:sc_tint_color="@color/colorActionbar"
+        segmentedgroup:sc_checked_text_color="#FFFFFF">
+
+        <RadioButton
+            android:id="@+id/rbBaoCaoNgay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Báo cáo ngày"
+            android:checked="true"
+            style="@style/RadioButton" />
+
+        <RadioButton
+            android:id="@+id/rbBaoCaoTuan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="BC T7 &amp; CN"
+            style="@style/RadioButton" />
+
+        <RadioButton
+            android:id="@+id/rbBaoCaoThang"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="TĐHS2 &amp; Đại lý"
+            style="@style/RadioButton" />
+
+        <RadioButton
+            android:id="@+id/rbBaoCaoTon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Báo cáo tồn"
+            style="@style/RadioButton" />
+
+    </info.hoang8f.android.segmented.SegmentedGroup>
+
+    <!--<android.support.v4.view.ViewPager-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/viewPager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/segment" />-->
+
+    <LinearLayout
+        android:id="@+id/llDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittext_login_background"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/ivFromDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_today_black_24dp"/>
+
+            <TextView
+                android:id="@+id/tvFromDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/ivFromDate"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:text="Từ ngày"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_login_background"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/ivToDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_today_black_24dp"/>
+
+            <TextView
+                android:id="@+id/tvToDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/ivToDate"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:text="Đến ngày"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grayLine"
+        android:visibility="visible"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Loại SP"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tvTDNha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nhà"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tvTDCongTy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="C.Ty"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tvTDXe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Xe Tima"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tvTDXeHub"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Xe Hub"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTitle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grayLine"
+        android:visibility="gone"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvType2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Loại SP"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tvTDTDChuyenTDHS2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TĐTĐ đẩy lên TĐHS2"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tvDaiLyDuyet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Đại lý duyệt"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTitle3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grayLine"
+        android:visibility="gone"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ngày"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tvType3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Loại SP"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tvNha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nhà"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tvCongTy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="C.ty"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tvXe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Xe Tima"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tvXeHub"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Xe Hub"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTitle4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grayLine"
+        android:visibility="gone"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvHSNhan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="HS nhận"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tvHSXuLy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="HS xử lý"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tvHSTon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="HS tồn"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvReport"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

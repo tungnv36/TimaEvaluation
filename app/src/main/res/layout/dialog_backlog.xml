@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xử lý tồn"
+        android:textColor="@color/white"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:background="@color/colorActionbar"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lý do tồn:"
+        android:textColor="@color/bg_sliding_menu"
+        android:layout_below="@+id/tvTitle"
+        android:layout_margin="5dp"
+        android:textSize="18sp"/>
+
+    <RadioGroup
+        android:id="@+id/rgGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/tvContent"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbDoKH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Do khách hàng" />
+
+        <RadioButton
+            android:id="@+id/rbDoNV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Do nhân viên"/>
+
+        <RadioButton
+            android:id="@+id/rbTon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tồn sau 15h"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etLyDo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="top"
+        android:layout_below="@+id/rgGroup"
+        android:layout_margin="5dp"
+        android:hint="Lý do tồn"
+        android:inputType="textMultiLine"/>
+
+    <Button
+        android:id="@+id/btHoanTat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etLyDo"
+        android:text="Hoàn tất"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_main"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btHuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/btHoanTat"
+        android:layout_below="@+id/etLyDo"
+        android:text="Huỷ"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/button_main"
+        android:textColor="#FFFFFF"/>
+
+</RelativeLayout>

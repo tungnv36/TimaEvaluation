@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:paddingLeft="@dimen/_2sdp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_note"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11sdp"
+        android:layout_height="wrap_content"
+        android:text="(Bắt buộc ít nhất 2 hàng xóm biết về khách hàng)" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_groupchildrenName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/tv_showhide"
+            android:layout_toStartOf="@+id/tv_showhide"
+            android:text="2.1 Xác minh từ hàng xóm"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <TextView
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/blue"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:text="Hiện"
+            android:background="@drawable/bg_radius_orange"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_showhide" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_group_child_checklist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+

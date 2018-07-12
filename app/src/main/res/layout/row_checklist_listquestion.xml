@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:paddingLeft="@dimen/_2sdp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_questionName"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textSize="@dimen/_11sdp"
+        android:layout_height="wrap_content"
+        android:text="a. Xác định cư trú: Thời gian cư trú:............năm" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/rv_lstGroupAnswer"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+    <EditText
+        android:id="@+id/tv_comment"
+        android:visibility="gone"
+        android:textSize="@dimen/_11sdp"
+        android:layout_width="match_parent"
+        android:hint="............................................."
+        android:layout_height="wrap_content"
+        android:textColor="@color/black" />
+</LinearLayout>
+

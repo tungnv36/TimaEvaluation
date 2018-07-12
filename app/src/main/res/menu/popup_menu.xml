@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/chuaThamDinh"
+        android:title="Chưa thẩm định"
+        />
+    <item
+        android:id="@+id/thamDinhXong"
+        android:title="Thẩm định xong"
+        />
+    <item
+        android:id="@+id/dangThamDinh"
+        android:title="Đang thẩm định"
+        />
+    <item
+        android:id="@+id/dangThamDinhHSKhac"
+        android:title="Đang thẩm định HS khác"
+        />
+</menu>

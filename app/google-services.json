@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "969036615548",
+    "firebase_url": "https://thamdinh-eefa7.firebaseio.com",
+    "project_id": "thamdinh-eefa7",
+    "storage_bucket": "thamdinh-eefa7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969036615548:android:1b1f712a394d7c3f",
+        "android_client_info": {
+          "package_name": "vn.tima.timainspection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "969036615548-s6vjs8p5gpj9risamgo2tp9uo0s7fedf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2eggXgXxuPHl8ixI7wOXBWrk_HyLmX5Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/cb_AnswerName"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/_10sdp"
+        android:text="Có ở nơi cư trú "
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

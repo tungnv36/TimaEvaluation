@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="8"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp">
+
+    <TextView
+        android:id="@+id/tvHoTen"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/tvTongTien"
+        android:layout_toStartOf="@+id/tvTongTien"
+        android:text="Nguyễn Vũ Tùng"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvQuanHuyen"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvHoTen"
+        android:layout_toLeftOf="@+id/tvTrangThai"
+        android:layout_toStartOf="@+id/tvTrangThai"
+        android:text="dd/MM/yyyy HH:mm"
+        android:textSize="@dimen/_12sdp" />
+
+    <TextView
+        android:id="@+id/tvNgayThang"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvQuanHuyen"
+        android:text="Hai ba tung"
+        android:textSize="@dimen/_12sdp" />
+
+    <Button
+        android:id="@+id/btThamDinhXe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="Thẩm định xe"
+        android:layout_below="@+id/tvTrangThai"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/_12sdp"
+        android:textAllCaps="false"
+        android:textColor="#EA4636"
+        android:gravity="center_vertical"/>
+
+    <LinearLayout
+        android:id="@+id/llNha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tvNgayThang"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tvThamDinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:text="Nhà: "/>
+
+        <Button
+            android:id="@+id/btNha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Thẩm định nhà ▾"
+            android:textSize="@dimen/_12sdp"
+            android:textAllCaps="false"
+            android:gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTongTien"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1,000,000 đ"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/greed4"
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold"
+        android:gravity="right"
+        android:textSize="@dimen/_12sdp"/>
+
+    <TextView
+        android:id="@+id/tvTrangThai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvQuanHuyen"
+        android:layout_alignBottom="@+id/tvQuanHuyen"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:text="HD: 123"
+        android:textSize="@dimen/_12sdp" />
+
+    <LinearLayout
+        android:id="@+id/llCongTy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvNgayThang"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tvCongTyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:text="C.ty: "/>
+
+        <Button
+            android:id="@+id/btCongTy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Thẩm định công ty ▾"
+            android:textSize="@dimen/_12sdp"
+            android:textAllCaps="false"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+</RelativeLayout>
