@@ -158,10 +158,7 @@ public class ProductRequest extends ApiRequest {
                 try {
                     Log.e(TAG, "postAppraisal: " + response.code() + "/" + response.message());
                     if (response.code() == 200) {
-
-
                         mResponse.onResponseSuccess(TAG, response.code() + "", response.body().string());
-
                     }
                 } catch (Exception e) {
                     e.printStackTrace();

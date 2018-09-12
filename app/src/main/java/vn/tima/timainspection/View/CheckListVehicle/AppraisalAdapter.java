@@ -111,15 +111,15 @@ public class AppraisalAdapter extends RecyclerView.Adapter<AppraisalAdapter.MyVi
         question.setIsCancelLoan();
         if (question.getIsCheck() != null) {
             if (!question.getIsCheck().equalsIgnoreCase(question.getState())) {
-                if (!userInfo.getUser(context).getGroupId().equals(Constant.GROUP_ID_TVV)) {
-                    holder.tv_money_discount.setText(question.getMoneyDiscount().equals("0") ? "" : "- " + Common.formatMoney(Long.parseLong(question.getMoneyDiscount())));
-                }
+//                if (!userInfo.getUser(context).getGroupId().equals(Constant.GROUP_ID_TVV)) {
+//                    holder.tv_money_discount.setText(question.getMoneyDiscount().equals("0") ? "" : "- " + Common.formatMoney(Long.parseLong(question.getMoneyDiscount())));
+//                }
                 if (isActionSum) {
                     mapDeduction.put(question.getId(), question.getMoneyDiscount());
                     ContractDetailActivity.totalMoneyDiscount += Integer.parseInt(question.getMoneyDiscount());
                 }
             } else {
-                holder.tv_money_discount.setText("");
+//                holder.tv_money_discount.setText("");
                 if (mapDeduction.containsKey(question.getId())) {
                     ContractDetailActivity.totalMoneyDiscount -= Integer.parseInt(mapDeduction.get(question.getId()));
                     mapDeduction.remove(question.getId());

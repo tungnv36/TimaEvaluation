@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -199,8 +200,20 @@ public class ValuationTabFragment extends Fragment implements View.OnClickListen
                         for (Motobike moto : data_motobike) {
                             data_search.add(moto.getFullName());
                         }
-                        adapter_search = new SearchMotobikeAdapter(getActivity(), R.layout.item_search_contract, data_search);
-                        atc_motobile.setAdapter(adapter_search);
+
+                        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.select_dialog_item, data_search);
+                        atc_motobile.setThreshold(1);//will start working from first character
+                        atc_motobile.setAdapter(adapter);//setting the adapter data into the AutoCompleteTextView
+
+                        atc_motobile.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                            @Override
+                            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                            }
+                        });
+
+//                        adapter_search = new SearchMotobikeAdapter(getActivity(), data_search);
+//                        atc_motobile.setAdapter(adapter_search);
                         initSelectMotobike();
                     } catch (Exception e) {
 //                        hideProgressDialog();
